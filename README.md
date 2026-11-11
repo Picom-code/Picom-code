@@ -22,9 +22,9 @@ a Rust OpenAI-compatible front-end, and a 1M-token context window on hardware th
 
 |  |  |
 |---|---|
-| aggregate | **438 tok/s** at 16 concurrent users |
-| single stream | **80–138 tok/s** |
-| cold 14k prompt | ~35 s |
+| aggregate | **441 tok/s** at 16 concurrent users |
+| single stream | **143 tok/s** code · 89.5 chat |
+| cold prefill | **~10k tok/s** |
 
 ### [ezlm](https://github.com/Picom-code/ezlm)
 
