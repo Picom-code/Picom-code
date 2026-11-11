@@ -1,10 +1,8 @@
 <div align="center">
-  <img src="./banner.svg" alt="Pico Moorhead — local AI infrastructure" width="100%" />
-</div>
 
-<br />
+### Pico Moorhead
 
-<div align="center">
+local AI infrastructure · your models, your machine
 
 ![DGX Spark](https://img.shields.io/badge/DGX_Spark-4_nodes-76b900?style=flat-square&labelColor=000000)
 ![RoCE](https://img.shields.io/badge/RoCE-200_GbE-76b900?style=flat-square&labelColor=000000)
@@ -12,6 +10,8 @@
 ![Throughput](https://img.shields.io/badge/throughput-438_tok%2Fs-76b900?style=flat-square&labelColor=000000)
 
 </div>
+
+---
 
 ## Two things I've built
 
