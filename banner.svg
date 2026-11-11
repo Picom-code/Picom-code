@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Pico Moorhead — local AI infrastructure">
+  <defs>
+    <linearGradient id="nv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a3e635"/>
+      <stop offset="45%" stop-color="#76b900"/>
+      <stop offset="100%" stop-color="#4d7c00"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#76b900" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#76b900" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="320" fill="#000000"/>
+  <rect width="1280" height="320" fill="url(#grid)"/>
+  <ellipse cx="1040" cy="160" rx="250" ry="190" fill="url(#glow)"/>
+
+  <!-- top hairline -->
+  <rect x="0" y="0" width="1280" height="3" fill="url(#nv)"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="72" y="104" fill="#7d828b" font-size="13" letter-spacing="4.2" font-weight="600">LOCAL AI INFRASTRUCTURE</text>
+    <text x="70" y="170" fill="#ffffff" font-size="64" font-weight="700" letter-spacing="-1.8">Pico Moorhead</text>
+    <text x="72" y="214" fill="url(#nv)" font-size="25" font-weight="600">your models. your machine.</text>
+    <text x="72" y="256" fill="#a8adb6" font-size="18" letter-spacing="0.2">4× DGX Spark · 200 GbE RoCE · 1M context · 438 tok/s at 16 users</text>
+    <text x="72" y="288" fill="#6e737c" font-size="14" letter-spacing="0.5">github.com/Picom-code</text>
+  </g>
+
+  <!-- 4-node RoCE mesh -->
+  <g stroke="#76b900" stroke-opacity="0.55" stroke-width="1.6">
+    <line x1="900" y1="104" x2="1030" y2="104"/>
+    <line x1="900" y1="216" x2="1030" y2="216"/>
+    <line x1="900" y1="104" x2="900"  y2="216"/>
+    <line x1="1030" y1="104" x2="1030" y2="216"/>
+    <line x1="900" y1="104" x2="1030" y2="216" stroke-opacity="0.2"/>
+    <line x1="1030" y1="104" x2="900" y2="216" stroke-opacity="0.2"/>
+  </g>
+  <g filter="url(#soft)" opacity="0.85" fill="#76b900">
+    <circle cx="900"  cy="104" r="11"/>
+    <circle cx="1030" cy="104" r="11"/>
+    <circle cx="900"  cy="216" r="11"/>
+    <circle cx="1030" cy="216" r="11"/>
+  </g>
+  <g fill="#000000" stroke="#a3e635" stroke-width="2.4">
+    <rect x="887"  y="91"  width="26" height="26" rx="4"/>
+    <rect x="1017" y="91"  width="26" height="26" rx="4"/>
+    <rect x="887"  y="203" width="26" height="26" rx="4"/>
+    <rect x="1017" y="203" width="26" height="26" rx="4"/>
+  </g>
+  <g fill="#a3e635">
+    <rect x="897"  y="101" width="6" height="6" rx="1"/>
+    <rect x="1027" y="101" width="6" height="6" rx="1"/>
+    <rect x="897"  y="213" width="6" height="6" rx="1"/>
+    <rect x="1027" y="213" width="6" height="6" rx="1"/>
+  </g>
+  <text x="965" y="252" fill="#7a7f88" font-size="11" text-anchor="middle" letter-spacing="2.6"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">ROCE MESH</text>
+</svg>
